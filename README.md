@@ -5,7 +5,8 @@
 Welcome to **StarChain Reviews**, a fully decentralized digital trust and reputation platform built on the **Stellar Soroban** blockchain. This project eliminates the fake review industry by cryptographically verifying all commercial feedback on-chain.
 
 - **Author**: Dnyaneshwari Badhe & Team
-- **Level**: 5 (Blue Belt) - Stellar Ecosystem MVP
+- **Level**: 5 (Blue Belt)
+- 3
 
 ---
 
@@ -125,7 +126,7 @@ We conducted comprehensive user testing with **5 real Stellar testnet users** to
 
 ## 👨💻 Author
 
-**Dnyaneshwari Badhe** & Team
+**Dnyaneshwari Badhe**
 - GitHub: [https://github.com/D-23Git](https://github.com/D-23Git)
 
 ---
