@@ -1,6 +1,6 @@
 # 🌟 StarChain Reviews - Level 5
 
-![StarChain Home Dashboard](./StarChain Home Dashboard.png)
+![StarChain Home Dashboard](StarChain Home Dashboard.png)
 
 Welcome to **StarChain Reviews**, a fully decentralized digital trust and reputation platform built on the **Stellar Soroban** blockchain. This project eliminates the fake review industry by cryptographically verifying all commercial feedback on-chain.
 
