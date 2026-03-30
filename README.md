@@ -1,6 +1,6 @@
 # 🌟 StarChain Reviews - Level 5
 
-![StarChain Home Dashboard](./public/assets/screenshots/home.png)
+![StarChain Home Dashboard](./assets/businesses/sharma.png)
 
 Welcome to **StarChain Reviews**, a fully decentralized digital trust and reputation platform built on the **Stellar Soroban** blockchain. This project eliminates the fake review industry by cryptographically verifying all commercial feedback on-chain.
 
@@ -22,27 +22,11 @@ Ensure your project meets all Level 5 requirements:
 ## 🔗 Important Links
 *   **Live Demo UI**: [https://starchain-fixed.vercel.app](https://starchain-fixed.vercel.app/)
 *   **GitHub Repository**: [https://github.com/D-23Git/StarChain](https://github.com/D-23Git/StarChain)
-*   **Architecture Document**: [ARCHITECTURE.md](https://github.com/D-23Git/StarChain/blob/main/ARCHITECTURE.md)
+*   **Architecture Document**: [ARCHITECTURE.md](./ARCHITECTURE.md)
 *   **User Feedback Form**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe9ZonncPvng8-KcDP_nLv5fLXx5R3nTSFXG7F0wymJMpYyiA/viewform?usp=publish-editor)
 *   **Collected User Responses**: [Google Sheet](https://docs.google.com/spreadsheets/d/1M7MpJttnzaU8tJJ5diGtT9nnqieeQzlkkgOKn_tpHxk/edit?usp=sharing)
 *   **Deployed Smart Contract ID (Testnet)**:
     *   `CA43LPCXAPJQZYGKAKYKMIBL7WBOXWFY22ZCVTGTDRULIUHGHWXBXU6N`
-
----
-
-## 🌟 Visual Proof of Trust
-
-### 1. Secure Wallet Connection
-![Freighter Wallet Login](./public/assets/screenshots/freighter_login.png)
-*Integration with Freighter Wallet ensures all reviews are tied to a unique, verified Stellar address.*
-
-### 2. On-Chain Review Confirmation
-![Review Success Confirmation](./public/assets/screenshots/review_success.png)
-*Real-time feedback after a successful Soroban transaction, proving data persistence on the blockchain.*
-
-### 3. Verified Business Profiles
-![Sharma Dosa Profile](./public/assets/screenshots/sharma_profile.png)
-*Each establishment has a verified profile on-chain with immutable history.*
 
 ---
 
@@ -60,11 +44,20 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 *   **Metadata Compression**: Efficient data encoding for storing rich review information.
 
 ### 3. Premium User Experience (UX)
+![StarChain Review Interface](./assets/businesses/medicare.png)
+
 *   **Browse Reviews Page**: Seamlessly view all submitted reviews with ratings and wallet verification.
 *   **Submit Review Form**: User-friendly interface to write and publish reviews directly on-chain.
 *   **Wallet Connection Status**: Real-time display of connected Stellar Freighter wallet.
 *   **Optimistic UI & Glassmorphism**: Modern deep-space aesthetics with high contrast.
 *   **Fully Responsive**: Built with modern CSS for flawless experience on desktop, tablet, and mobile.
+*   **Live Rating Display**: Instant feedback showing your review has been recorded.
+
+### 4. Trust & Verification System
+*   **Wallet Address Verification**: Every reviewer's Stellar wallet is publicly visible and verifiable.
+*   **Blockchain Explorer Links**: Direct links to verify transactions on Stellar Expert.
+*   **Immutable Record**: Reviews cannot be edited or deleted once published on-chain.
+*   **Community Trust Score**: Aggregate ratings visible for transparent reputation.
 
 ---
 
@@ -74,7 +67,6 @@ Our core logic is built with Rust on the Soroban smart contract platform:
 starchain-fixed/
 ├── public/                 # Static assets (images, logos)
 │   └── assets/
-│       └── screenshots/    # Verified UI screenshots
 │       └── businesses/     # Verified business images
 ├── src/
 │   ├── components/         # Reusable UI components
@@ -93,7 +85,7 @@ starchain-fixed/
 
 *   **Frontend**: React.js, Vite
 *   **State Management**: Zustand (for wallet connection state)
-*   **Styling**: Vanilla CSS, Glassmorphism effects (Deep Space Theme)
+*   **Styling**: Vanilla CSS, Glassmorphism effects
 *   **Blockchain Integration**: 
     *   `@stellar/stellar-sdk` - Stellar network communication
     *   `@stellar/freighter-api` - Wallet integration
@@ -155,6 +147,48 @@ We conducted comprehensive user testing with **5 real Stellar testnet users** to
 | 5 | Pratidnya Agalave | `GCPHAHVI7F4BOL6H6UIC3PBBESUN3PE7D3QVJLAMFLJBJDJMMX23JWYP` | ⭐⭐⭐⭐⭐ | *"The project can be improved by adding more advanced features"* |
 
 **Overall User Sentiment:** ✅ **Highly Positive** — Users appreciate the secure review verification, intuitive UI, and seamless Freighter wallet integration. All ratings averaged 5/5 stars.
+
+---
+
+## 🔮 Future Improvement Plan
+
+### ✅ Current MVP Features
+- ✅ Review submission and storage on Soroban
+- ✅ Freighter wallet integration
+- ✅ Browse all reviews functionality
+- ✅ Real-time blockchain verification
+- ✅ Responsive UI design
+
+### 🎯 Planned Improvements (Next Iteration)
+
+#### ⚡ 1. Performance Optimization
+- Implement off-chain indexing database for instant Browse page loading
+- Add skeleton loaders for better perceived performance
+- Cache recent reviews locally
+
+#### 🪙 2. Advanced Tokenomics
+- Deploy real SRT (StarChain Reward Token) as a Stellar Custom Asset
+- Implement gas sponsoring for new users (no XLM required)
+
+#### 📊 3. Enhanced Dashboard Analytics
+- Expand dashboard with review history charts
+- Implement fake account detection algorithm
+
+---
+
+## 📋 How to Use StarChain
+
+### Step 1: Connect Wallet
+1. Install [Freighter Wallet Extension](https://www.freighter.app/)
+2. Set your wallet to **Stellar Testnet**
+3. Click "Connect Freighter" on the app
+4. Approve the connection in the extension popup
+
+### Step 2: Submit a Review
+1. Go to "Submit Review" page
+2. Enter review details (title, description, rating)
+3. Click "Submit to Blockchain"
+4. Approve the Soroban transaction in Freighter
 
 ---
 
