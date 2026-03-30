@@ -1,0 +1,50 @@
+.leaderboard-page { min-height: 100vh; background: #000; padding-bottom: 100px; color: #fff; }
+
+.lb-hero { padding: 80px 0; background: radial-gradient(circle at 50% 100%, rgba(147, 51, 234, 0.1) 0%, #000 80%); border-bottom: 1px solid #111; margin-bottom: 60px; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.font-bold { font-weight: 800; }
+.text-gray { color: #888; }
+
+.lb-empty { padding: 60px 40px; background: #050505; border: 1px dashed #222; border-radius: 20px; text-align: center; }
+.lb-empty h2 { color: #fff; font-size: 24px; margin-bottom: 15px; }
+.lb-empty p { color: #888; }
+
+.lb-table-glass {
+  background: #06050a; border: 1px solid #1a1030; border-radius: 24px; overflow: hidden; padding: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.lb-tr {
+  display: flex; align-items: center; justify-content: space-between; padding: 20px; border-bottom: 1px solid #111; gap: 15px;
+}
+.lb-tr:last-child { border-bottom: none; }
+.lb-th { padding: 15px 20px; background: rgba(255,255,255,0.02); border-radius: 12px; border: none; margin-bottom: 5px; }
+.lb-th .lb-td { color: #666; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.lb-td { flex: 1; font-size: 15px; }
+.lb-td.text-right { text-align: right; }
+
+.lb-address-col { display: flex; align-items: center; gap: 15px; flex: 2; }
+.lb-avatar {
+  width: 40px; height: 40px; border-radius: 10px; background: #141414; border: 1px solid #222;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; color: #d8b4fe;
+}
+.lb-tag-glow {
+  font-size: 9px; padding: 3px 8px; border-radius: 4px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3);
+  margin-left: 10px; text-transform: uppercase; font-weight: 900; letter-spacing: 0.1em;
+}
+
+.lb-level-pill {
+  padding: 6px 14px; border-radius: 20px; background: rgba(255,255,255,0.05); color: #ccc; font-weight: 700; font-size: 12px;
+}
+
+.lb-top-3 { background: linear-gradient(90deg, transparent, rgba(147,51,234,0.05), transparent); }
+.lb-top-3.lb-tr { border-bottom-color: rgba(147,51,234,0.1); }
+.lb-top-3 .lb-avatar { border-color: rgba(147,51,234,0.4); box-shadow: 0 0 15px rgba(147,51,234,0.2); }
+.lb-top-3 .lb-score { color: #d8b4fe; }
+
+@media (max-width: 768px) {
+  .lb-th { display: none; }
+  .lb-tr { flex-direction: column; align-items: flex-start; padding: 25px 15px; }
+  .lb-td { width: 100%; text-align: left !important; }
+}

@@ -1,0 +1,19 @@
+.star-disp {
+  display: flex; align-items: center; gap: 2px;
+}
+.sd-star { color: var(--bg4); }
+.sd-star.on { color: var(--gold); }
+.sd-val {
+  font-size: 13px; font-weight: 700;
+  color: var(--t2); margin-left: 5px;
+}
+
+.star-inp-wrap { display: flex; flex-direction: column; gap: 6px; }
+.star-inp-row  { display: flex; gap: 6px; }
+.si-btn {
+  background: none; border: none; font-size: 30px;
+  color: var(--bg4); transition: all .1s; padding: 0; line-height: 1;
+}
+.si-btn.on    { color: var(--gold); transform: scale(1.1); }
+.si-btn:hover { transform: scale(1.2); }
+.si-label { font-size: 13px; color: var(--t2); min-height: 20px; }

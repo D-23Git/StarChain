@@ -1,0 +1,171 @@
+.cel-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(0, 0, 0, .82);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: cel-fade-in .3s ease;
+}
+
+@keyframes cel-fade-in {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.cel-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cel-card {
+  position: relative;
+  z-index: 2;
+  background: var(--bg1);
+  border: 1px solid var(--bd2);
+  border-radius: var(--r3);
+  padding: 40px 36px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .7), 0 0 0 1px rgba(120, 80, 255, .15);
+  animation: cel-pop .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@keyframes cel-pop {
+  from {
+    transform: scale(.7) translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.cel-glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--r3);
+  background: linear-gradient(135deg, rgba(109, 40, 217, .3), rgba(245, 158, 11, .2), rgba(16, 185, 129, .2));
+  opacity: .5;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(16px);
+}
+
+.cel-icon {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 16px;
+  animation: cel-bounce 1s ease infinite alternate;
+}
+
+@keyframes cel-bounce {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-8px) scale(1.08);
+  }
+}
+
+.cel-title {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -.03em;
+  background: linear-gradient(130deg, #a78bfa, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.cel-stars {
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: #fbbf24;
+  margin-bottom: 10px;
+}
+
+.cel-biz {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-bottom: 18px;
+}
+
+.cel-chain-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(16, 185, 129, .1);
+  border: 1px solid rgba(16, 185, 129, .25);
+  color: var(--grn2);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.cel-chain-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: blink 1.4s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: .3
+  }
+}
+
+.cel-sub {
+  font-size: 13px;
+  color: var(--t2);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cel-btn {
+  background: linear-gradient(135deg, var(--a), var(--a2));
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 32px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--f);
+  transition: all .18s;
+  box-shadow: 0 4px 20px rgba(109, 40, 217, .35);
+}
+
+.cel-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(109, 40, 217, .5);
+}
