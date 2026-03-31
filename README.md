@@ -146,7 +146,7 @@ starchain-fixed/
     ```
 
 4.  **Visit the App**: 
-    Open [http://localhost:5173](http://localhost:5173) in your browser.
+    Open [http://localhost:5180](http://localhost:5180) in your browser.
 
 ---
 
